@@ -18,7 +18,7 @@ ie. [{"2147483708" "ETH" "Ether"}]
 Usage:
 
 consts := bip44.Create() 
-eth := c.Get("ETH") // [{"2147483708" "ETH" "Ether"}] format: constant, coinSymbol, coinName
+eth := c.Get("ETH") // [{"2147483708" "ETH" "Ether"}]
 ethBtc := c.Get("ETH", "BTC") // [{"2147483648" "BTC" "Bitcoin"} {"2147483708" "ETH" "Ether"}]
 
 Also you can get all constants:
