@@ -21,7 +21,6 @@ func convert(sl string) Constants {
 	return slip
 }
 
-// Create is starting point. You get constants.
 func Create() Constants {
 	slip := convert(Slip0044)
 	return slip
