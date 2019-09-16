@@ -31,6 +31,14 @@ func Create() Constants {
 func(c Constants) Get(coinSymbol ...string) []constant {
 	constants := make([]constant, 0)
 
+	if len(coinSymbol) == 0 {
+		for _, v := range c {
+			constants = append(constants, v)
+		}
+
+		return constants
+	}
+
 	for _, symbol := range coinSymbol {
 		for _, v := range c {
 			if v.CoinSymbol == symbol {
